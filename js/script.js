@@ -27,8 +27,6 @@ info__line4.onclick = function(){
 
 new Swiper('.card__wrapper', {
   loop: true,
-  spaceBetween:30,
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -68,7 +66,7 @@ line1.onclick = function(){
 }
 
 line2.onclick = function(){
-  slider.style.transform = 'translateX(-25%)';
+  slider.style.transform = 'translateX(-20%)';
   active.style.top = '80px';
 }
 

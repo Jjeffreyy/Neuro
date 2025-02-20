@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, ru-RU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website for Monovision Studio" />
-    <meta name="author" content="Awesome student" />
+    <meta name="description" content="Neuro" />
+    <meta name="author" content="Vitalii Kachaev" />
     <title>Neuro</title>
-    <link type href="favicon.ico" rel="icon" />
+    <link rel="android-chrome" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+    <link rel="android-chrome" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="img/favicon/apple-touch-icon.png">
+    <link rel="favicon" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="favicon" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link type href="img/favicon/favicon.ico" rel="icon" />
     <link href="css/modern-normalize.min.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -20,48 +25,44 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
         <div class="wrapp">
           <div class="upper__header">
             <div class="upper__header-left">
-              <img src="img/icons/brain.svg" alt />
-              <span>Клиника нейрохирургии lorem ipsum</span>
+              <img src="img/icons/brain.svg" alt="brain" />
+              <span>Клиника нейрохирургии <br> lorem ipsum</span>
             </div>
             <div class="upper__header-right">
               <div class="header__contact-item">
-                <img src="img/icons/mail.svg" alt />
-                <a href="#">example@gmail.com</a>
+                <img src="img/icons/mail.svg" alt="mail" />
+                <a href="mailto:example@gmail.com">example@gmail.com</a>
               </div>
               <div class="header__contact-item">
-                <img src="img/icons/phone.svg" alt />
+                <img src="img/icons/phone.svg" alt="phone" />
                 <div class="header__contact-tel">
-                  <a href="#">+380508982004</a>
-                  <a href="#">+380678784003</a>
+                  <a href="tel:380508982004">+380508982004</a>
+                  <a href="tel:380678784003">+380678784003</a>
                 </div>
               </div>
               <div class="header__contact-item">
-                <img src="img/icons/mark.svg" alt />
-                <span class="locate__text"
-                  >Областная клиническая больница, 2 этаж<br />
-                  проспект Независимости, 13, Харков, 61000</span
-                >
+                <img src="img/icons/mark.svg" alt="locate" />
+                <address class="locate__text">
+                  Областная клиническая больница, 2 этаж<br />
+                  проспект Независимости, 13, Харков, 61000</address>
               </div>
             </div>
           </div>
           <div class="lower__header">
             <ul class="nav">
-              <li><a href="#">ГЛАВНАЯ</a></li>
-              <li><a href="#">ПРО КЛИНИКУ</a></li>
-              <li><a href="#">ЗАБОЛЕВАНИЯ</a></li>
-              <li><a href="#">СПЕЦИАЛИСТЫ</a></li>
-              <li><a href="#">КОНТАКТЫ И ОТЗЫВЫ</a></li>
+              <li><a href="#">главная</a></li>
+              <li><a href="#">про клинику</a></li>
+              <li><a href="#">заболевания</a></li>
+              <li><a href="#">специалисты</a></li>
+              <li><a href="#">контакты и отзывы</a></li>
             </ul>
           </div>
-        </div>
-      </div>
+        </div> 
     </header>
     <section class="promo">
-      <div class="container">
         <div class="promo__msg-container">
           <div id="slider" class="slider">
             <div class="promo__msg-column">
@@ -84,20 +85,18 @@
         </div>
         <div class="controller">
           <div id="line1" class="line1">
-            <img src="img/slider/arrow__left.svg" alt />
+            <img src="img/slider/arrow__left.svg" alt="pointer" />
           </div>
           <div id="line2" class="line2">
-            <img src="img/slider/arrow__right.svg" alt />
+            <img src="img/slider/arrow__right.svg" alt="pointer" />
           </div>
           <div id="active" class="active"></div>
         </div>
-      </div>
     </section>
     <section class="about">
-      <div class="container">
         <div class="about__block">
           <div class="about__img">
-            <img src="img/about/about.png" alt />
+            <img src="img/about/about.png" alt="picture clinic" />
           </div>
           <div class="about__text">
             <h2 class="about__title">Про Клинику</h2>
@@ -111,28 +110,20 @@
               изменений пять веков.</span
             >
             <a href="#">Узнать больше</a>
+            <img src="img/specialist/specialist__pulse.svg" alt />
           </div>
         </div>
-      </div>
     </section>
     <section class="specialist">
-      <div class="container">
         <div class="specialist__block">
           <div class="specialist__header">
             <h2 class="specialist__title">наши специалисты</h2>
-            <img src="img/specialist/specialist__pulse.svg" alt />
           </div>
-          <div>
-            <img src="img/specialist/speacialist__team.png" alt />
-          </div>
-          <div class="specialist__link">
+            <img src="img/specialist/speacialist__team.png" alt="team" />
             <a href="#">Подробнее о каждом</a>
-          </div>
         </div>
-      </div>
     </section>
     <section class="diseases">
-      <div class="container">
         <h2 class="diseases__title">заболевания</h2>
         <div class="diseases__block">
           <div class="diseases__block-item">
@@ -356,10 +347,9 @@
             <a href="#">Подробнее</a>
           </div>
         </div>
-      </div>
     </section>
     <section class="news">
-      <div class="container swiper">
+      <div class="swiper">
         <h2 class="news__title">Новости</h2>
         <div class="news__block">
           <div class="card__wrapper">
@@ -367,7 +357,7 @@
               <li class="card__item swiper-slide">
                 <a class="card__link" href="#">
                   <time datetime="21.12.2018">21.12.2018</time>
-                  <img class="card__image" src="img/news/1.jpg" alt />
+                  <img class="card__image" src="img/news/1.jpg" alt="news picture" />
                   <h2 class="card__title">
                     При оценке дизайна читаемый текст мешает сосредоточиться
                   </h2>
@@ -561,7 +551,7 @@
               <li class="card__item swiper-slide">
                 <a class="card__link" href="#">
                   <time datetime="21.12.2018">21.12.2018</time>
-                  <img class="card__image" src="img/news/2.jpg" alt />
+                  <img class="card__image" src="img/news/2.jpg" alt="news picture" />
                   <h2 class="card__title">
                     При оценке дизайна читаемый текст мешает сосредоточиться
                   </h2>
@@ -755,7 +745,7 @@
               <li class="card__item swiper-slide">
                 <a class="card__link" href="#">
                   <time datetime="21.12.2018">21.12.2018</time>
-                  <img class="card__image" src="img/news/3.jpg" alt />
+                  <img class="card__image" src="img/news/3.jpg" alt="news picture" />
                   <h2 class="card__title">
                     При оценке дизайна читаемый текст мешает сосредоточиться
                   </h2>
@@ -949,7 +939,7 @@
               <li class="card__item swiper-slide">
                 <a class="card__link" href="#">
                   <time datetime="21.12.2018">21.12.2018</time>
-                  <img class="card__image" src="img/news/1.jpg" alt />
+                  <img class="card__image" src="img/news/1.jpg" alt="news picture" />
                   <h2 class="card__title">
                     При оценке дизайна читаемый текст мешает сосредоточиться
                   </h2>
@@ -1143,7 +1133,7 @@
               <li class="card__item swiper-slide">
                 <a class="card__link" href="#">
                   <time datetime="21.12.2018">21.12.2018</time>
-                  <img class="card__image" src="img/news/2.jpg" alt />
+                  <img class="card__image" src="img/news/2.jpg" alt="news picture" />
                   <h2 class="card__title">
                     При оценке дизайна читаемый текст мешает сосредоточиться
                   </h2>
@@ -1337,7 +1327,7 @@
               <li class="card__item swiper-slide">
                 <a class="card__link" href="#">
                   <time datetime="21.12.2018">21.12.2018</time>
-                  <img class="card__image" src="img/news/3.jpg" alt />
+                  <img class="card__image" src="img/news/3.jpg" alt="news picture" />
                   <h2 class="card__title">
                     При оценке дизайна читаемый текст мешает сосредоточиться
                   </h2>
@@ -1538,7 +1528,6 @@
       </div>
     </section>
     <section class="info">
-      <div class="container">
         <div class="info__block">
           <div class="info__contacts">
             <h3 class="info__title">контакты</h3>
@@ -1616,48 +1605,46 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <footer class="footer">
       <div class="footer__block">
         <div class="upper__header-left">
-          <img src="img/icons/brain.svg" alt />
+          <img src="img/icons/brain.svg" alt="brain" />
           <span>Клиника нейрохирургии lorem ipsum</span>
         </div>
         <div class="footer__social">
           <h3>Мы в соцсетях:</h3>
           <a href="#">
-            <img src="img/footer/footer__insta.svg" alt="">
+            <img src="img/footer/footer__insta.svg" alt="instagram">
           </a>
           <a href="#">
-            <img src="img/footer/footer__face.svg" alt="">
+            <img src="img/footer/footer__face.svg" alt="facebook">
           </a>
           <a href="#">
-            <img src="img/footer/footer__you.svg" alt="">
+            <img src="img/footer/footer__you.svg" alt="youtube">
           </a>
         </div>
         <div class="upper__header-right">
           <div class="header__contact-item">
-            <img src="img/icons/phone.svg" alt />
+            <img src="img/icons/phone.svg" alt="phone" />
             <div class="header__contact-tel">
-              <a href="#">+380508982004</a>
-              <a href="#">+380678784003</a>
+              <a href="tel:380508982004">+380508982004</a>
+              <a href="tel:380678784003">+380678784003</a>
             </div>
           </div>
           <div class="header__contact-item">
-            <img src="img/icons/mark.svg" alt />
-            <span class="locate__text"
-              >Областная клиническая больница, 2 этаж<br />
-              проспект Независимости, 13, Харков, 61000</span
-            >
+            <img src="img/icons/mark.svg" alt="locate" />
+            <address class="locate__text">
+              Областная клиническая больница, 2 этаж<br />
+              проспект Независимости, 13, Харков, 61000</address>
           </div>
         </div>
-        <div class="footer__policy">
-           <span><a href="policy.html">Политикой конфиденциальности</a></span>
-        </div>
-       
+          
       </div>
-      
+      <div class="footer__policy">
+            <span><a href="policy.html">Политикой конфиденциальности</a></span>
+          </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
