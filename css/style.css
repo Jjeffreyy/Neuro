@@ -49,14 +49,14 @@ time{
 	padding: 10px;
 }
 
+:root {
+    --swiper-navigation-size: 25px;
+}
+
 .wrapp{
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-}
-
-.container{
-	padding: 0 170px;
 }
 
 .header{
@@ -64,7 +64,7 @@ time{
 	width: 100%;
 	height: 130px;
 	color: #fff;
-	padding: 24px 0;
+	padding: 30px 160px;
 	font-size: 12px;
 }
 
@@ -76,7 +76,7 @@ time{
 
 .upper__header-right{
 	display: flex;
-	gap: 10px;
+	gap: 40px;
 }
 
 .upper__header-left{
@@ -96,6 +96,7 @@ time{
 		justify-content: center;
 		gap: 60px;
 		font-size: 14px;
+		text-transform: uppercase;
 	}
 	
 }
@@ -119,6 +120,7 @@ time{
 	background: url('../img/promo/promo.jpg') center center/cover no-repeat;
 	width: 100%;
 	height: 550px;
+	padding: 107px 250px;
 	h1{
 		font-weight: 700;
 		font-size: 40px;
@@ -139,11 +141,8 @@ time{
 }
 
 .promo__msg-container{
-	position: absolute;
 	width: 600px;
 	height: 300px;
-	left: 14%;
-	top: 27%;
 	overflow: hidden;
 }
 
@@ -169,18 +168,18 @@ time{
 
 .line1{
 	position: absolute;	
-	top: 45%;
-	left: 6%;
+	top: 40%;
+	left: 10%;
 }
 
 .line2{
 	position: absolute;
-    top: 45%;
-    right: 4%;
+    top: 40%;
+    right: 9%;
 }
 
 .about{
-	padding: 70px 240px;
+	padding: 70px 152px 0 248px;
 	a{
 		margin-top: 80px;
 		text-align: center;
@@ -215,15 +214,25 @@ time{
 
 .about__text{
 	padding: 15px;
+	img{
+		margin-left: 60%;
+	}
 }
 
 .specialist{
-	padding: 70px 240px;
+	padding: 70px 115px 0 249px;
+	.specialist__block{
+		img{
+			width: 90%;
+		}
+		a{
+			display: block;
+			margin: 0 auto;
+			transform: translateX(-33%);
+		}
+	}
 	.specialist__header{
-		display: flex;
-        justify-content: space-between;
-        align-items: center;
-		position: relative;
+		text-align: center;
 		img{
 			position: absolute;
             top: -160px;
@@ -232,13 +241,12 @@ time{
 
 	}
 	.specialist__title{
+		margin-right: 134px;
 		margin-bottom: 30px;
 		font-weight: 700;
 		font-size: 30px;
 		text-transform: uppercase;
 		color: #013476;
-		opacity: 0.2;
-		margin-left: 31%;
 	}
 	a{
 		margin-top: 70px;
@@ -251,15 +259,10 @@ time{
         background: #013476;
 		color: #fff;
 	}
-	.specialist__link{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 }
 
 .diseases{
-	padding: 70px 0;
+	padding: 80px 170px;
 	.diseases__title{
 		font-weight: 700;
 		font-size: 30px;
@@ -269,10 +272,12 @@ time{
 	}
 	.diseases__block{
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 		margin-top: 55px;
+		gap: 55px;
 	}
+	a
 	.diseases__block-item{
 		padding: 33px;
 		display: flex;
@@ -289,6 +294,12 @@ time{
 			height: 44px;
 		}
 	}
+	.diseases__block-item:hover{
+		cursor: pointer;
+		box-shadow: 3px 3px 35px 0 #1a76dc;
+		background: rgba(28, 96, 158, 0.9);	
+	}
+
 	.diseases__subtitle{
 		margin-top: 22px;
 		font-weight: 700;
@@ -313,6 +324,7 @@ time{
 }
 
 .news{
+	padding: 0 150px;
 	.news__title{
 		text-align: center;
 		font-weight: 700;
@@ -364,6 +376,7 @@ time{
 }
 
 .info{
+	padding: 0 154px;
 	position: relative;
 	margin-top: 70px;
 	.info__title_feedback{
@@ -384,14 +397,14 @@ time{
         height: 24px;
         position: absolute;
         top: 11%;
-        right: 47%;
+        right: 50%;
 	}
 	.info__contacts::after{
 		content: '';
 		display: block;
 		position: absolute;
-        left: 44%;
-        top: 59%;
+        left: 41%;
+        top: 57%;
 		border: 2px solid rgba(28, 96, 158, 0.6);
 		width: 180px;
 		height: 0px;
@@ -436,11 +449,8 @@ time{
 }
 
 .info__msg-container{
-	position: absolute;
 	width: 600px;
 	height: 300px;
-	right: 14%;
-	top: 0;
 	overflow: hidden;
 }
 
@@ -467,8 +477,8 @@ time{
 .info__controller{
 	display: block;
 	position: absolute;
-	bottom: -5%;
-    right: 36%;
+	bottom: 0;
+    right: 40%;
 	transform: rotate(270deg);
 	height: 48px;
 	width: 1px;
@@ -501,6 +511,7 @@ time{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	margin-top: 70px;
 	background-color: #013476;
 	width: 100%;
@@ -509,10 +520,9 @@ time{
 	padding: 24px 0;
 	font-size: 12px;
 	position: relative;
+	gap: 20px;
 	.footer__policy{
-		position: absolute;
-        bottom: 15px;
-        right: 357px;
+		margin-left: 49%;
 	}
 }
 
@@ -530,6 +540,23 @@ time{
 	gap: 80px;
 }
 
+
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    transition: .2s transform, .2s left;
+    border-radius: 4px;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 110px);
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 80px);
+    right: auto;
+}
 
 
 
