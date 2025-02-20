@@ -277,6 +277,7 @@ time{
 		margin-top: 55px;
 		gap: 55px;
 	}
+	a
 	.diseases__block-item{
 		padding: 33px;
 		display: flex;
