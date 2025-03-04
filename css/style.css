@@ -103,6 +103,10 @@ time{
 
 .locate__text{
 	display: block;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 10px;
+	color: #fff;
 }
 
 .header__contact-item {
@@ -214,8 +218,11 @@ time{
 
 .about__text{
 	padding: 15px;
+	position: relative;
 	img{
-		margin-left: 60%;
+		position: absolute;
+		bottom: -95px;
+		right: 40px;
 	}
 }
 
@@ -229,6 +236,7 @@ time{
 			display: block;
 			margin: 0 auto;
 			transform: translateX(-33%);
+			margin-top: 70px;
 		}
 	}
 	.specialist__header{
@@ -277,7 +285,7 @@ time{
 		margin-top: 55px;
 		gap: 55px;
 	}
-	a
+	
 	.diseases__block-item{
 		padding: 33px;
 		display: flex;
@@ -389,6 +397,7 @@ time{
 	}
 	.info__feedback{
 		width: 500px;
+		margin-right: 110px;
 	}
 	.info__feedback::before{
 		content: '';
@@ -422,7 +431,6 @@ time{
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: 0 186px 0 154px;
 	}
 	a{
 		padding: 12px;
@@ -478,7 +486,7 @@ time{
 	display: block;
 	position: absolute;
 	bottom: 0;
-    right: 40%;
+    right: 39%;
 	transform: rotate(270deg);
 	height: 48px;
 	width: 1px;
@@ -549,13 +557,18 @@ time{
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 110px);
+    right: var(--swiper-navigation-sides-offset, 150px);
     left: auto;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 80px);
+    left: var(--swiper-navigation-sides-offset, 150px);
     right: auto;
+}
+
+.card__wrapper {
+    margin: 0 120px 35px;
+
 }
 
 
