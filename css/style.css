@@ -101,6 +101,9 @@ time{
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	@media (max-width: 768px){
+		display: none;
+	}
 	img{
 		@media (max-width: 960px) {
 			width: 30px;
