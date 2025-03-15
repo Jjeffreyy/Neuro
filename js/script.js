@@ -82,6 +82,12 @@ line4.onclick = function(){
   active.style.top = '80px';
 }
 
+$(document).ready(function() {
+  $('.header__burger').click(function(event){
+    $('.header__burger,.lower__header').toggleClass('.active');
+  });
+});
+
 
 
 
