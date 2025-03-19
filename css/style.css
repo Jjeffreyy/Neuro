@@ -58,7 +58,7 @@ time{
 	flex-direction: column;
 	gap: 30px;
 	@media(max-width: 768px) {
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
@@ -81,7 +81,7 @@ time{
 		padding: 30px 60px;
 	}
 	@media(max-width: 768px){
-		height: 70px;
+		height: 230px;
 	}
 	.header__burger{
 		display: none;
@@ -172,6 +172,9 @@ time{
 	}
 	@media (max-width: 768px){
 		z-index: 7;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
 	}
 }
 
@@ -180,6 +183,10 @@ time{
 	gap: 40px;
 	@media (max-width: 1150px) {
 		gap: 20px;
+	}
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
 	}
 	img{
 		@media (max-width: 960px) {
@@ -193,9 +200,6 @@ time{
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	@media (max-width: 768px){
-		display: none;
-	}
 	img{
 		@media (max-width: 960px) {
 			width: 30px;
