@@ -231,9 +231,10 @@ time{
 			position: fixed;
 			top: -100%;
 			right: 0;
-			width: 50%;
+			width: 100%;
 			height: 100%;
 			background-color: #000000;
+			opacity: 0.8;
 			display: flex;
 			flex-direction: column;
 			transition: all 0.5s ease 0s;
@@ -245,6 +246,9 @@ ul.nav.active{
 		top: 0;
 		transition: all 0.5s ease 0s;
 	}
+}
+ul.nav li{
+	margin-right: 40px;
 }
 
 .locate__text{
@@ -271,11 +275,37 @@ ul.nav.active{
 	width: 100%;
 	height: 550px;
 	padding: 107px 250px;
+	margin-top: 130px;
+	@media(max-width: 1150px){
+		padding: 107px 150px;
+	}
+	@media(max-width: 960px) {
+		padding: 82px 180px;
+	}
+	@media(max-width: 768px) {
+		margin-top: 230px;
+	}
+	@media(max-width: 576px) {
+		padding: 82px 60px;
+	}
+	@media(max-width: 425px) {
+		padding: 82px 40px;
+	}
 	h1{
 		font-weight: 700;
 		font-size: 40px;
 		text-transform: uppercase;
 		color: #484848;
+		@media(max-width: 1150px){
+			font-size: 30px;
+			margin-top: 75px;
+		}
+		@media(max-width: 768px) {
+			margin-top: 0;
+		}
+		@media(max-width: 576px) {
+			font-size: 13px;
+		}
 	}
 	a{
 		margin-top: 100px;
@@ -292,6 +322,12 @@ ul.nav.active{
 			height: 40px;
 			padding: 10px;
 		}
+		@media (max-width: 768px) {
+			width: 150px;
+			font-size: 13px;
+			padding: 13px;
+			
+		}
 	}
 }
 
@@ -299,6 +335,9 @@ ul.nav.active{
 	width: 600px;
 	height: 300px;
 	overflow: hidden;
+	@media(max-width: 960px) {
+		width: 300px;
+	}
 }
 
 .slider{
@@ -307,8 +346,11 @@ ul.nav.active{
 }
 
 .promo__msg-column{
-	width: 600px;
+	width: 606px;
 	height: 300px;
+	@media(max-width: 960px) {
+		width: 300px;
+	}
 
 }
 
@@ -319,18 +361,36 @@ ul.nav.active{
 .line1, .line2{
 	cursor: pointer;
 	transform: translateX(-50%);
+	img{
+		@media(max-width: 576px) {
+			width: 40px;
+			height: 40px;
+		}
+		@media(max-width: 425px) {
+			width: 30px;
+		}
+	}
 }
 
 .line1{
 	position: absolute;	
 	top: 40%;
 	left: 10%;
+	@media(max-width: 576px) {
+		left: 6%;
+	}
 }
 
 .line2{
 	position: absolute;
     top: 40%;
     right: 9%;
+	@media(max-width: 1150px) {
+		right: 23%;
+	}
+	@media(max-width: 576px) {
+		right: 19%;
+	}
 }
 
 .about{
