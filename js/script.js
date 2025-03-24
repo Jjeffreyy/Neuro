@@ -21,7 +21,7 @@ line1.onclick = function(){
 }
 
 line2.onclick = function(){
-  slider.style.transform = 'translateX(-20%)';
+  slider.style.transform = 'translateX(-25%)';
   active.style.top = '80px';
 }
 
