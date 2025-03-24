@@ -280,14 +280,15 @@ ul.nav li{
 		padding: 107px 150px;
 	}
 	@media(max-width: 960px) {
-		padding: 82px 180px;
+		padding: 82px 100px;
+		background-position-x: 100%;
 	}
 	@media(max-width: 768px) {
 		margin-top: 230px;
 		padding: 82px 85px;
 	}
 	@media(max-width: 576px) {
-		padding: 82px 60px;
+		background-position-x: 80%;
 	}
 	@media(max-width: 425px) {
 		padding: 82px 40px;
@@ -301,9 +302,12 @@ ul.nav li{
 			font-size: 30px;
 			margin-top: 75px;
 		}
+		@media(max-width: 960px){
+			font-size: 30px;
+		}
 		@media(max-width: 768px) {
 			margin-top: 0;
-			font-size: 25px;
+			font-size: 15px;
 		}
 		@media(max-width: 576px) {
 			font-size: 13px;
@@ -338,6 +342,12 @@ ul.nav li{
 	height: 300px;
 	overflow: hidden;
 	@media(max-width: 960px) {
+		width: 500px;
+	}
+	@media(max-width: 768px) {
+		width: 350px;
+	}
+	@media(max-width: 576px) {
 		width: 300px;
 	}
 }
@@ -351,6 +361,12 @@ ul.nav li{
 	width: 606px;
 	height: 300px;
 	@media(max-width: 960px) {
+		width: 500px;
+	}
+	@media(max-width: 768px) {
+		width: 350px;
+	}
+	@media(max-width: 576px) {
 		width: 300px;
 	}
 
@@ -378,6 +394,9 @@ ul.nav li{
 	position: absolute;	
 	top: 40%;
 	left: 10%;
+	@media(max-width: 960px) {
+		left: 6%;
+	}
 	@media(max-width: 576px) {
 		left: 6%;
 	}
@@ -388,7 +407,7 @@ ul.nav li{
     top: 40%;
     right: 9%;
 	@media(max-width: 1150px) {
-		right: 23%;
+		right: 9%;
 	}
 	@media(max-width: 576px) {
 		right: 19%;
