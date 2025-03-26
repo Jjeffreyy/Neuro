@@ -142,6 +142,9 @@ time{
 		background-color: #013476;
 		z-index: 3;
 	}
+	@media(max-width: 425px) {
+		height: 110%;
+	}
 }
 .header__burger.active::before{
 		@media (max-width: 768px){
