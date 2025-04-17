@@ -37,6 +37,7 @@ img {
 html {
 	font-family: "Inter", sans-serif;
 	scroll-behavior: smooth;
+	background: #f4f8ff;
 }
 
 a{
@@ -51,6 +52,11 @@ time{
 
 :root {
     --swiper-navigation-size: 25px;
+}
+
+.container{
+	width: 1440px;
+	margin: 0 auto;
 }
 
 .wrapp{
@@ -587,12 +593,24 @@ ul.nav li{
 
 .diseases{
 	padding: 80px 170px;
+	@media(max-width: 1150px) {
+		padding: 80px 100px;
+	}
+	@media(max-width: 960px) {
+		padding: 60px 50px;
+	}
+	@media(max-width: 425px) {
+		padding: 60px 10px;
+	}
 	.diseases__title{
 		font-weight: 700;
 		font-size: 30px;
 		text-transform: uppercase;
 		color: #013476;
 		text-align: center;
+		@media(max-width: 960px) {
+			font-size: 25px;
+		}
 	}
 	.diseases__block{
 		display: flex;
@@ -600,6 +618,12 @@ ul.nav li{
 		align-items: center;
 		margin-top: 55px;
 		gap: 55px;
+		@media(max-width: 960px) {
+			gap: 20px;
+		}
+		@media(max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 	
 	.diseases__block-item{
@@ -613,6 +637,9 @@ ul.nav li{
 		height: 260px;
 		box-shadow: 3px 3px 35px 0 rgba(0, 0, 0, 0.1);
 		background: #fff;
+		@media(max-width: 425px) {
+			width: 280px;	
+		}
 		img{
 			width: 44px;
 			height: 44px;
@@ -640,6 +667,9 @@ ul.nav li{
 		font-weight: 700;
 		font-size: 18px;
 		color: #000;
+		@media(max-width: 960px) {
+			font-size: 16px;
+		}
 	}
 	.diseases__text{
 		margin-top: 13px;
@@ -647,6 +677,9 @@ ul.nav li{
 		font-size: 14px;
 		text-align: center;
 		color: #484848;
+		@media(max-width: 960px) {
+			font-size: 12px;
+		}
 	}
 	a{		
 		cursor: pointer;
@@ -660,6 +693,9 @@ ul.nav li{
 
 .news{
 	padding: 0 150px;
+	@media(max-width: 1150px) {
+		padding: 0 60px;
+	}
 	.news__title{
 		text-align: center;
 		font-weight: 700;
@@ -682,6 +718,13 @@ ul.nav li{
 	text-decoration: none;
 	padding: 18px;
 	width: 365px;
+	@media(min-width: 1150px) {
+		width: auto;
+	}
+	@media(max-width:1150px) {
+		width: 250px;
+		padding: 15px;
+	}
 }
 
 .card__list .card__link .card__image{
@@ -694,7 +737,7 @@ ul.nav li{
 }
 
 .card__wrapper{
-	padding: 5px 0 40px 0;
+	padding: 5px 20px 40px 20px;
 }
 
 .card__title{
@@ -702,6 +745,9 @@ ul.nav li{
 	font-weight: 700;
 	font-size: 18px;
 	color: #1c609e;
+	@media(max-width: 1150px) {
+		font-size: 15px;
+	}
 }
 
 .card__subtitle{
@@ -888,14 +934,16 @@ ul.nav li{
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 140px);
+    right: var(--swiper-navigation-sides-offset, 1px);
     left: auto;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 145px);
+    left: var(--swiper-navigation-sides-offset, 1px);
     right: auto;
 }
+
+
 
 
 
