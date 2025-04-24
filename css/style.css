@@ -1003,9 +1003,6 @@ ul.nav li{
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-	@media(max-width: 768px){
-		margin-bottom: 10px;
-	}
 }
 
 .footer__block{
@@ -1026,6 +1023,7 @@ ul.nav li{
 	justify-content: flex-end;
 	@media(max-width: 768px){
 		justify-content: center;
+		margin-bottom: 10px;
 	}
   }
 
