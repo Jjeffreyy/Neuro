@@ -401,7 +401,7 @@ ul.nav li{
 
 .line1{
 	position: absolute;	
-	top: 40%;
+	top: 62%;
 	left: 10%;
 	@media(max-width: 960px) {
 		left: 6%;
@@ -413,7 +413,7 @@ ul.nav li{
 
 .line2{
 	position: absolute;
-    top: 40%;
+    top: 62%;
     right: 9%;
 	@media(max-width: 1150px) {
 		right: 9%;
