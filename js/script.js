@@ -8,7 +8,8 @@ try {
   // Тут что делать в случае ошибки, но можно оставить пустые скобки
 }
 
-let slider = document.getElementById('slider');
+try {
+  let slider = document.getElementById('slider');
 let line1 = document.getElementById('line1');
 let line2 = document.getElementById('line2');
 let line3 = document.getElementById('line3');
@@ -34,64 +35,81 @@ line4.onclick = function(){
   slider.style.transform = 'translateX(-75%)';
   active.style.top = '80px';
 }
-
-
-
-let info__slider = document.getElementById('info__slider');
-let info__line1 = document.getElementById('info__line1');
-let info__line2 = document.getElementById('info__line2');
-let info__line3 = document.getElementById('info__line3');
-let info__line4 = document.getElementById('info__line4');
-let info__active = document.getElementById('info__active');
-
-info__line1.onclick = function(){
-  info__slider.style.transform = 'translateX(0)';
-  info__active.style.top = '0px';
+} catch(e) {
+  // Тут что делать в случае ошибки, но можно оставить пустые скобки
 }
 
-info__line2.onclick = function(){
-  info__slider.style.transform = 'translateX(-25%)';
-  info__active.style.top = '20px';
-}
-
-info__line3.onclick = function(){
-  info__slider.style.transform = 'translateX(-50%)';
-  info__active.style.top = '42px';
-}
-
-info__line4.onclick = function(){
-  info__slider.style.transform = 'translateX(-75%)';
-  info__active.style.top = '64px';
-}
-
-new Swiper('.card__wrapper', {
-  loop: true,
-  spaceBetween: 23,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-    dynamicBullets:true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  breakpoints: {
-      0: {
-          slidesPerView: 1
-      },
-      768: {
-          slidesPerView: 2
-      },
-      960: {
-          slidesPerView: 3
-      },
+try {
+  let info__slider = document.getElementById('info__slider');
+  let info__line1 = document.getElementById('info__line1');
+  let info__line2 = document.getElementById('info__line2');
+  let info__line3 = document.getElementById('info__line3');
+  let info__line4 = document.getElementById('info__line4');
+  let info__active = document.getElementById('info__active');
+  
+  info__line1.onclick = function(){
+    info__slider.style.transform = 'translateX(0)';
+    info__active.style.top = '0px';
   }
-});
+  
+  info__line2.onclick = function(){
+    info__slider.style.transform = 'translateX(-25%)';
+    info__active.style.top = '20px';
+  }
+  
+  info__line3.onclick = function(){
+    info__slider.style.transform = 'translateX(-50%)';
+    info__active.style.top = '42px';
+  }
+  
+  info__line4.onclick = function(){
+    info__slider.style.transform = 'translateX(-75%)';
+    info__active.style.top = '64px';
+  }
+  
+} catch(e) {
+  // Тут что делать в случае ошибки, но можно оставить пустые скобки
+}
+
+try {
+  new Swiper('.card__wrapper', {
+    loop: true,
+    spaceBetween: 23,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+      dynamicBullets:true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        960: {
+            slidesPerView: 3
+        },
+    }
+  });
+} catch(e) {
+  // Тут что делать в случае ошибки, но можно оставить пустые скобки
+}
+
+
+
+
+
+
+
 
 
 
