@@ -998,6 +998,11 @@ ul.nav li{
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+	.locate__text{
+		@media(max-width: 768px){
+			display: none;
+		}
+	}
 }
 
 .footer__social{
