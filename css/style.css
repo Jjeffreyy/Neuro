@@ -992,9 +992,9 @@ ul.nav li{
 		padding: 24px 60px;
 	}
 	@media(max-width: 768px){
+		font-size: 8px;
 		height: 230px;
 		gap: 10px;
-		font-size: 8px;
 	}
 }
 
@@ -1003,6 +1003,9 @@ ul.nav li{
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	@media(max-width: 768px){
+		margin-bottom: 10px;
+	}
 }
 
 .footer__block{
