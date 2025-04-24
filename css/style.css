@@ -993,7 +993,7 @@ ul.nav li{
 	}
 	@media(max-width: 768px){
 		height: 230px;
-		font-size: 8px;
+		gap: 10px;
 	}
 }
 
@@ -1012,7 +1012,7 @@ ul.nav li{
 	@media(max-width: 768px){
 		height: 230px;
 		flex-direction: column;
-		gap: 16px;
+		gap: 10px;
 	}
 }
 
