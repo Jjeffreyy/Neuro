@@ -779,7 +779,7 @@ ul.nav li{
 	.info__feedback{
 		width: 500px;
 		h3{
-			padding-left: 35px;
+			padding-left: 156px;
 		}
 		@media(max-width: 768px) {
 			width: 400px;
@@ -808,7 +808,7 @@ ul.nav li{
 		height: 0px;
 		transform: rotate(-90deg);
 		@media(max-width: 960px) {
-			left: 40%;
+			left: 45%;
 		}
 		@media(max-width: 768px) {
 			display: none;
@@ -899,6 +899,9 @@ ul.nav li{
 	width: 600px;
 	height: 300px;
 	overflow: hidden;
+	@media(max-width: 768px) {
+		width: 400px;
+	}
 }
 
 .info__slider{
@@ -911,6 +914,7 @@ ul.nav li{
 	height: 300px;
 	@media(max-width: 768px) {
 		padding-left: 38px;
+		width: 400px;
 	}
 	h1{
 		font-weight: 700;
@@ -981,6 +985,15 @@ ul.nav li{
 	font-size: 12px;
 	position: relative;
 	gap: 20px;
+	@media (max-width: 1150px) {
+		padding: 24px 100px;
+	}
+	@media (max-width: 960px) {
+		padding: 24px 60px;
+	}
+	@media(max-width: 768px){
+		height: 230px;
+	}
 }
 
 .footer__social{
@@ -995,6 +1008,11 @@ ul.nav li{
 	align-items: center;
 	justify-content: space-around;
 	gap: 80px;
+	@media(max-width: 768px){
+		height: 230px;
+		flex-direction: column;
+		gap: 16px;
+	}
 }
 
 .footer__policy {
