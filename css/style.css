@@ -1019,6 +1019,9 @@ ul.nav li{
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
+	@media(max-width: 768px){
+		justify-content: center;
+	}
   }
 
 
