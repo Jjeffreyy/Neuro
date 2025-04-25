@@ -779,7 +779,7 @@ ul.nav li{
 	.info__feedback{
 		width: 500px;
 		h3{
-			padding-left: 156px;
+			padding-left: 143px;
 		}
 		@media(max-width: 960px) {
 			width: 400px;
@@ -922,7 +922,7 @@ ul.nav li{
 		font-size: 18px;
 		color: #000;
 		@media(max-width: 960px) {
-			padding-left: 100px;
+			padding-left: 88px;
 		}
 	}
 	span{
