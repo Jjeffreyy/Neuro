@@ -1031,6 +1031,7 @@ ul.nav li{
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
+	margin-bottom: 10px;
 	@media(max-width: 768px){
 		justify-content: center;
 	}
